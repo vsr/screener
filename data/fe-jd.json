@@ -6,15 +6,63 @@
             "weight": 5
         },
         {
+            "name": "es6",
+            "weight": 3
+        },
+        {
+            "name": "es2013",
+            "weight": 3
+        },
+        {
+            "name": "esnext",
+            "weight": 5
+        },
+        {
+            "name": "node",
+            "weight": 3
+        },
+        {
             "name": "nodejs",
             "weight": 3
         },
         {
-            "name": "es6",
-            "weight": 5
+            "name": "framework",
+            "weight": 4
         },
         {
-            "name": "framework",
+            "name": "frameworks",
+            "weight": 4
+        },
+        {
+            "name": "angular",
+            "weight": 4
+        },
+        {
+            "name": "angularjs",
+            "weight": 4
+        },
+        {
+            "name": "react",
+            "weight": 4
+        },
+        {
+            "name": "reactjs",
+            "weight": 4
+        },
+        {
+            "name": "vue",
+            "weight": 4
+        },
+        {
+            "name": "vuejs",
+            "weight": 4
+        },
+        {
+            "name": "ember",
+            "weight": 4
+        },
+        {
+            "name": "emberjs",
             "weight": 4
         },
         {
@@ -28,13 +76,33 @@
         {
             "name": "babel",
             "weight": 5
+        },
+        {
+            "name": "html",
+            "weight": 3
+        },
+        {
+            "name": "html5",
+            "weight": 3
+        },
+        {
+            "name": "css",
+            "weight": 3
+        },
+        {
+            "name": "css3",
+            "weight": 3
+        },
+        {
+            "name": "sass",
+            "weight": 3
         }
     ],
     "keywords": {
         "es6": [
             "es6",
             "es2015",
-            "ESNext"
+            "esnext"
         ],
         "nodejs": [
             "node",
@@ -61,7 +129,8 @@
         ],
         "css": [
             "css",
-            "css3"
+            "css3",
+            "sass"
         ]
     },
     "description": "Understand clients' organisations, aspirations and challenges.     Help clients identify promising solutions through participating in, and leading, digital workshops.     Build real solutions through experimentation as part of a multi-faceted team.     Accelerate and improve how we help our clients through developing and contributing to components, services and methodologies.     Explore up-and-coming technologies and software products; seize learning and knowledge sharing opportunities; participate in professional organizations. Read; teach; learn.     A passion and talent for JavaScript development, handling both server-side and client-side code.     Excellent ES2016/ESNext, HTML & CSS skills, comfortable using modern frameworks to develop single page applications.     A desire to learn and keep up with new technologies that transcends current crazes and trendy tools or frameworks.     Effective communication skills, both written and verbal for technical and non-technical audiences.     Experience of working with UX teams to jointly craft UIs that are both exciting and fit for purpose.     Deep understanding of what motivates, inspires and stifles software teams.     Experience with agile methods, along with having found their limitations and ways to overcome them."
