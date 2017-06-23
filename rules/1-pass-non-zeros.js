@@ -7,7 +7,8 @@ function rule(cv, jd){
 
 	const tokenMap = _.countBy(tokens, _.identity);
 	let isAllKeywordsPresent = true;
-	_.each(jd.keywords, (keywords) => {
+	const keywordPresenceMap = {};
+	_.each(jd.keywords, (keywords, key) => {
 		let isSynonymPresent = false;
 		_.each(keywords, (keyword) => {
 			isSynonymPresent = tokenMap.hasOwnProperty(keyword);
@@ -16,11 +17,12 @@ function rule(cv, jd){
 			}
 		});
 		isAllKeywordsPresent = isSynonymPresent;
-		if (!isAllKeywordsPresent) {
-			return false;
-		}
+		keywordPresenceMap[key] = isSynonymPresent;
 	});
-	return isAllKeywordsPresent ? 5 : 0;
+	return {
+		score: isAllKeywordsPresent ? 5 : 0,
+		data: keywordPresenceMap
+	};
 }
 
 module.exports = rule;

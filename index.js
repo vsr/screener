@@ -21,7 +21,8 @@ fs.readFile('./data/fe-jd.json', 'utf-8', function(err, jd) {
 function runner(rules, cv, jd){
 	const scores = [];
 	rules.forEach((rule) => {
-		const score = rule(cv, jd);
+		const { score, data } = rule(cv, jd);
+		console.log(data)
 		scores.push(score);
 	});
 	return (utils.average(scores)).toFixed(2);

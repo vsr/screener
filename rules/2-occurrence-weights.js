@@ -11,15 +11,24 @@ function rule(cv, jd){
 
 	const tokenMap = _.countBy(tokens, _.identity);
 	const scores = [];
+	const map = {};
 	_.each(jd.weightedKeywords, (keyword) => {
 		const isAllKeywordsPresent = tokenMap.hasOwnProperty(keyword.name);
 		if (isAllKeywordsPresent) {
 			const count = _.min([tokenMap[keyword.name], MAX_OCCURRENCE]);
 			const score = (keyword.weight * count) / (MAX_OCCURRENCE * MAX_WEIGHT) * SCALING_FACTOR;
 			scores.push(score);
+			map[keyword.name] = {
+				weight: keyword.weight,
+				occurrence: count,
+				score
+			};
 		}
 	})
-	return utils.average(scores);
+	return {
+		score: utils.average(scores),
+		data: map
+	};
 }
 
 module.exports = rule;
