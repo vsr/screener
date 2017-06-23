@@ -7,10 +7,11 @@ function rule(cv, jd){
 
 	const tokenMap = _.countBy(tokens, _.identity);
 	let isAllKeywordsPresent = true;
-	_.each(jd.keywords, (value) => {
-		isAllKeywordsPresent = tokenMap.hasOwnProperty(value);
+	_.each(jd.keywords, (keyword) => {
+		isAllKeywordsPresent = tokenMap.hasOwnProperty(keyword.name);
+		console.log(keyword.name, isAllKeywordsPresent);
 		if (!isAllKeywordsPresent) {
-			return;
+			return false;
 		}
 	})
 	return isAllKeywordsPresent ? 5 : 0;
