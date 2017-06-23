@@ -11,7 +11,7 @@ function rule(cv, jd){
 
 	const tokenMap = _.countBy(tokens, _.identity);
 	const scores = [];
-	_.each(jd.keywords, (keyword) => {
+	_.each(jd.weightedKeywords, (keyword) => {
 		const isAllKeywordsPresent = tokenMap.hasOwnProperty(keyword.name);
 		if (isAllKeywordsPresent) {
 			const count = _.min([tokenMap[keyword.name], MAX_OCCURRENCE]);

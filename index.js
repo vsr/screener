@@ -7,7 +7,7 @@ fs.readFile('./data/fe-jd.json', 'utf-8', function(err, jd) {
 	const jd_data = JSON.parse(jd);
 	let score;
 
-	fs.readFile('./data/cv-1.txt', 'utf-8', function(err, cv_data) {
+	fs.readFile('./data/cv-3.txt', 'utf-8', function(err, cv_data) {
 		score = runner([rule1, rule2], cv_data.toLowerCase(), jd_data);
 		console.log(score);
 	})
