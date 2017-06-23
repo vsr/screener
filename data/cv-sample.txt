@@ -1,0 +1,36 @@
+
+Surabhi Chopra
+Bangalore.
+
+
+Professional Summary
+Front End developer with 7+ years of experience in building modern single page web applications. I work closely with 
+Product Managers, UX Designers and Back-end developers to provide front end solutions with pixel perfection. 
+
+
+Skills:
+
+HTML(4 & 5), CSS (2 & 3), SASS
+         JavaScript(ES5&ES6), TypeScript, JSON, XML
+         JS Frameworks - AngularJS, ReactJS
+         jQuery, underscore.js, Redux, 
+         Modernizr, 
+Bootstrap, Foundation
+         D3.js, Chart.js, Fabric.js
+         NPM, Grunt, Gulp, Webpack, Bower
+         TDD/BDD with Jasmine, Mocha, Chai, Sinon
+         GIT, SVN, CI(Jenkins)
+
+
+Secondary skills:
+PHP, Python, WordPress, ReactNative, IOS, etc
+
+•	Visual Studio; Visual Studio Code; Eclipse
+
+declare that all above furnished details are correct to the best of my knowledge.
+
+
+Maintained & supported any UI issues across several applications.
+Part of agile development teams making hybrid mobile apps and web apps for 1mn+ users and 50+ enterprise clients.
+
+
