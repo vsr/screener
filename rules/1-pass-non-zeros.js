@@ -9,7 +9,6 @@ function rule(cv, jd){
 	let isAllKeywordsPresent = true;
 	_.each(jd.keywords, (keyword) => {
 		isAllKeywordsPresent = tokenMap.hasOwnProperty(keyword.name);
-		console.log(keyword.name, isAllKeywordsPresent);
 		if (!isAllKeywordsPresent) {
 			return false;
 		}
