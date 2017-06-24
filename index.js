@@ -11,7 +11,7 @@ fs.readFile('./data/fe-jd.json', 'utf-8', function(err, jd) {
 		score = runner([rule1, rule2], cv_data.toLowerCase(), jd_data);
 		console.log(score);
 	})
-	
+
 });
 
 
