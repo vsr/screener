@@ -16,7 +16,7 @@ function rule(cv, jd){
 				return false;
 			}
 		});
-		isAllKeywordsPresent = isSynonymPresent;
+		isAllKeywordsPresent = isAllKeywordsPresent && isSynonymPresent;
 		keywordPresenceMap[key] = isSynonymPresent;
 	});
 	return {
