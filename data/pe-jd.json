@@ -159,7 +159,8 @@
         "Cloud": [
             "AWS",
             "Azure",
-            "Google Cloud"
+            "Google Cloud",
+            "heroku"
         ],
         "Platform": [
             "pivotal",
@@ -178,7 +179,8 @@
             "icinga",
             "appdynamics",
             "newrelic",
-            "datadog"
+            "datadog",
+            "dynatrace"
         ], 
         "logging": [
             "splunk",
