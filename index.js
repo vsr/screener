@@ -8,24 +8,12 @@ fs.readFile('./data/fe-jd.json', 'utf-8', function(err, jd) {
 	const jd_data = JSON.parse(jd);
 	let results;
 
-	fs.readFile('./data/cv-vinay.txt', 'utf-8', function(err, cv_data) {
+	fs.readFile('./data/cv-sample.txt', 'utf-8', function(err, cv_data) {
 		results = runner([rule1, rule2], cv_data.toLowerCase(), jd_data);
-		console.log(results);
-    console.log( (utils.average(results.map((result)=>result.score))).toFixed(2) );
+		console.log(JSON.stringify(results, null, '  '));
+    const averageScore = (utils.average(results.map((result)=>result.score)))
+    const averageReadableScore = averageScore.toFixed(2);
+    console.log(`\nAverage score: ${averageReadableScore}`);
 	})
 
 });
-
-
-
-
-
-// function runner(rules, cv, jd){
-// 	const scores = [];
-// 	rules.forEach((rule) => {
-// 		const { score, data } = rule(cv, jd);
-// 		console.log(data)
-// 		scores.push(score);
-// 	});
-// 	return (utils.average(scores)).toFixed(2);
-// }
